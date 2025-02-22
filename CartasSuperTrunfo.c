@@ -19,4 +19,37 @@ int main() {
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
     return 0;
+
+    char estado[10] = "Amazonas";
+    char codigo[10] = "A01";
+    char cidade[10] = "Manaus";
+    int populacao = 2000000;
+    float area = 11401;
+    float PIB = 10328;
+    int numerodepontosturisticos = 80;
+
+    char estado[10] = 'Pará';
+    char codigo[10] = "B02";
+    char cidade[10] = "Belém";
+    int populacao = 1300000;
+    float area = 1059;
+    float PIB = 33;
+    int numerodepontosturisticos = 50;
+
+    printf("Olá, bem vindo ao jogo super trunfo \n");
+
+    printf("Carta 1:\n");
+    printf("Estado: %d\n", estado);
+    printf("Código: %c%s\n", estado, codigo);
+    printf("Nome da Cidade: %s\n", cidade);
+    printf("População: %d\n", populacao);
+    printf("Área: %.2f km2\n", area);
+    printf("PIB: %.2f bilhões de reais\n", PIB);
+    printf("Número de Pontos Turísticos: %d\n", numerodepontosturisticos);
+
+
+
+
+
+
 }
