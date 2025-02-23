@@ -20,36 +20,78 @@ int main() {
 
     return 0;
 
-    char estado[10] = "Amazonas";
-    char codigo[10] = "A01";
-    char cidade[10] = "Manaus";
-    int populacao = 2000000;
-    float area = 11401;
-    float PIB = 10328;
-    int numerodepontosturisticos = 80;
+    char estado[20];
+    char codigo[3];
+    char cidade[20];
+    int populacao;
+    float area;
+    float PIB;
+    int numerodepontosturisticos;
 
-    char estado[10] = 'Pará';
-    char codigo[10] = "B02";
-    char cidade[10] = "Belém";
-    int populacao = 1300000;
-    float area = 1059;
-    float PIB = 33;
-    int numerodepontosturisticos = 50;
+    printf("Olá, bem vindo ao jogo super trunfo!!! \n");
 
-    printf("Olá, bem vindo ao jogo super trunfo \n");
+    printf("\nDigite um nome de um estado: ");
+    scanf("%s", &estado);
 
-    printf("Carta 1:\n");
-    printf("Estado: %d\n", estado);
-    printf("Código: %c%s\n", estado, codigo);
+    printf("\nDigite um codigo para este estado, em formato letra e numero, ex: A01, B02: ");
+    scanf("%s", &codigo);
+
+    printf("\nDigite um nome de uma cidade desse estado: ");
+    scanf("%s", &cidade);
+
+    printf("\nDigite a quantidade populacional dessa cidade: ");
+    scanf("%d", &populacao);
+
+    printf("\nDigite a área dessa cidade: ");
+    scanf("%f", &area);
+
+    printf("\nDigite o PIB dessa cidade: ");
+    scanf("%f", &PIB);
+
+    printf("\nDigite o número de pontos turísticos dessa cidade: ");
+    scanf("%d", &numerodepontosturisticos);
+
+    printf("\nCarta 1:\n");
+    printf("Estado: %s\n", estado);
+    printf("Código: %s\n", codigo);
     printf("Nome da Cidade: %s\n", cidade);
     printf("População: %d\n", populacao);
     printf("Área: %.2f km2\n", area);
     printf("PIB: %.2f bilhões de reais\n", PIB);
-    printf("Número de Pontos Turísticos: %d\n", numerodepontosturisticos);
+    printf("Número de Pontos Turísitcos: %d\n", numerodepontosturisticos);
+
+    printf("\nDigite um nome de um estado: ");
+    scanf("%s", &estado);
+
+    printf("\nDigite um codigo para este estado, em formato letra e numero, ex: A01, B02: ");
+    scanf("%s", &codigo);
+
+    printf("\nDigite um nome de uma cidade desse estado: ");
+    scanf("%s", &cidade);
+
+    printf("\nDigite a quantidade populacional dessa cidade: ");
+    scanf("%d", &populacao);
+
+    printf("\nDigite a área dessa cidade: ");
+    scanf("%f", &area);
+
+    printf("\nDigite o PIB dessa cidade: ");
+    scanf("%f", &PIB);
+
+    printf("\nDigite o número de pontos turísticos dessa cidade: ");
+    scanf("%d", &numerodepontosturisticos);
+
+    printf("\nCarta 2:\n");
+    printf("Estado: %s\n", estado);
+    printf("Código: %s\n", codigo);
+    printf("Nome da Cidade: %s\n", cidade);
+    printf("População: %d\n", populacao);
+    printf("Área: %.2f km2\n", area);
+    printf("PIB: %.2f bilhões de reais\n", PIB);
+    printf("Número de Pontos Turísitcos: %d\n", numerodepontosturisticos);
 
 
 
-
-
+    return 0;
 
 }
