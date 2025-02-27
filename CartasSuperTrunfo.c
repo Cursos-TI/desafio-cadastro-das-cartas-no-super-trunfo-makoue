@@ -18,9 +18,8 @@ int main() {
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
-    return 0;
 
-    char estado[20];
+    char estado[30];
     char codigo[3];
     char cidade[20];
     int populacao;
@@ -28,29 +27,30 @@ int main() {
     float PIB;
     int numerodepontosturisticos;
 
-    printf("Olá, bem vindo ao jogo super trunfo!!! \n");
+    printf("\nOlá, bem vindo ao jogo super trunfo!!! \n");
 
-    printf("\nDigite um nome de um estado: ");
-    scanf("%s", &estado);
+    printf("\nPara a Carta 1, digite um nome de um estado: ");
+    scanf("%s", estado);
 
-    printf("\nDigite um codigo para este estado, em formato letra e numero, ex: A01, B02: ");
-    scanf("%s", &codigo);
+    printf("\nAgora, digite um código para este estado, em formato de letra e numero, por exemplo: A01, B02, ...: ");
+    scanf("%s", codigo);
 
-    printf("\nDigite um nome de uma cidade desse estado: ");
-    scanf("%s", &cidade);
+    printf("\nLegal, agora digite um nome de uma cidade desse estado: ");
+    scanf("%s", cidade);
 
-    printf("\nDigite a quantidade populacional dessa cidade: ");
+    printf("\nJóia, agora digite a quantidade populacional dessa cidade: ");
     scanf("%d", &populacao);
 
-    printf("\nDigite a área dessa cidade: ");
+    printf("\nEstamos quase lá, agora digite a área dessa cidade em Km2: ");
     scanf("%f", &area);
 
-    printf("\nDigite o PIB dessa cidade: ");
+    printf("\nFalta pouco, agora digite o PIB dessa cidade em milhões de reais: ");
     scanf("%f", &PIB);
 
-    printf("\nDigite o número de pontos turísticos dessa cidade: ");
+    printf("\nPor último, digite o número de pontos turísticos dessa cidade: ");
     scanf("%d", &numerodepontosturisticos);
 
+    printf("\nAs informações da primeira carta são: \n");
     printf("\nCarta 1:\n");
     printf("Estado: %s\n", estado);
     printf("Código: %s\n", codigo);
@@ -60,26 +60,30 @@ int main() {
     printf("PIB: %.2f bilhões de reais\n", PIB);
     printf("Número de Pontos Turísitcos: %d\n", numerodepontosturisticos);
 
-    printf("\nDigite um nome de um estado: ");
-    scanf("%s", &estado);
+    while (getchar() != '\n');
 
-    printf("\nDigite um codigo para este estado, em formato letra e numero, ex: A01, B02: ");
-    scanf("%s", &codigo);
+    printf("\nPara a Carta 2, digite um nome de um estado: ");
+    scanf("%s", estado);
 
-    printf("\nDigite um nome de uma cidade desse estado: ");
-    scanf("%s", &cidade);
+    printf("\nAgora, digite um código para este estado, em formato de letra e numero, por exemplo: A01, B02, ...: ");
+    scanf("%s", codigo);
 
-    printf("\nDigite a quantidade populacional dessa cidade: ");
+    printf("\nLegal, agora digite um nome de uma cidade desse estado: ");
+    scanf("%s", cidade);
+
+    printf("\nJóia, agora digite a quantidade populacional dessa cidade: ");
     scanf("%d", &populacao);
 
-    printf("\nDigite a área dessa cidade: ");
+    printf("\nEstamos quase lá, agora digite a área dessa cidade em Km2: ");
     scanf("%f", &area);
 
-    printf("\nDigite o PIB dessa cidade: ");
+    printf("\nFalta pouco, agora digite o PIB dessa cidade em milhões de reais: ");
     scanf("%f", &PIB);
 
-    printf("\nDigite o número de pontos turísticos dessa cidade: ");
+    printf("\nPor último, digite o número de pontos turísticos dessa cidade: ");
     scanf("%d", &numerodepontosturisticos);
+
+    printf("\nAs informações da segunda carta são:\n");
 
     printf("\nCarta 2:\n");
     printf("Estado: %s\n", estado);
